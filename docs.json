@@ -11,6 +11,38 @@
   "navigation": {
     "tabs": [
       {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API Documentation",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api-reference/endpoints/get-todos-todo_id",
+              "api-reference/endpoints/post-todos"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "SDK Reference",
+        "groups": [
+          {
+            "group": "Python SDK",
+            "pages": [
+              "sdk-reference/introduction",
+              "sdk-reference/client",
+              "sdk-reference/get_todo",
+              "sdk-reference/create_todo"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Guides",
         "groups": [
           {
@@ -43,26 +75,6 @@
               "ai-tools/cursor",
               "ai-tools/claude-code",
               "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
             ]
           }
         ]
