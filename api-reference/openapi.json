@@ -115,6 +115,23 @@
           }
         }
       }
+    },
+    "/completed": {
+      "get": {
+        "summary": "Completed Todos",
+        "description": "Get all completed to-dos.",
+        "operationId": "completed_todos_completed_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {

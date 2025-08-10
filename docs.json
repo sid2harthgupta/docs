@@ -36,7 +36,8 @@
             "pages": [
               "api-reference/endpoint/create-todo",
               "api-reference/endpoint/delete-todo",
-              "api-reference/endpoint/get-todo"
+              "api-reference/endpoint/get-todo",
+              "api-reference/endpoint/list-todos"
             ]
           }
         ]
