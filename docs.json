@@ -11,15 +11,6 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": []
-          }
-        ]
-      },
-      {
         "tab": "API Reference",
         "groups": [
           {
@@ -54,11 +45,6 @@
     ],
     "global": {
       "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
         {
           "anchor": "Community",
           "href": "https://mintlify.com/community",
