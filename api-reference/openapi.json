@@ -8,7 +8,7 @@
     "/todos/{todo_id}": {
       "get": {
         "summary": "Get Todo",
-        "description": "Get a to-do by ID",
+        "description": "Get a to-do by ID.",
         "operationId": "get_todo_todos__todo_id__get",
         "parameters": [
           {
@@ -44,7 +44,7 @@
       },
       "delete": {
         "summary": "Delete Todo",
-        "description": "Delete a to-do by ID",
+        "description": "Delete a to-do by ID.",
         "operationId": "delete_todo_todos__todo_id__delete",
         "parameters": [
           {
@@ -82,7 +82,7 @@
     "/todos": {
       "post": {
         "summary": "Post Todo",
-        "description": "Create a new to-do",
+        "description": "Create a new to-do.",
         "operationId": "post_todo_todos_post",
         "requestBody": {
           "content": {
