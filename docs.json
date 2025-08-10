@@ -2,6 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Galileo",
+  "openapi": "api-reference/openapi.json",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -22,19 +23,16 @@
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "API reference",
         "groups": [
           {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
+            "group": "API documentation",
+            "pages": ["api-reference/introduction"]
           },
           {
-            "group": "Endpoints",
+            "group": "Endpoint examples",
             "pages": [
-              "api-reference/endpoint/get-todo",
-              "api-reference/endpoint/create-todo"
+              "api-reference/endpoints"
             ]
           }
         ]
@@ -104,8 +102,5 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
-  },
-  "openapi": [
-    "api-reference/openapi.json"
-  ]
+  }
 }
