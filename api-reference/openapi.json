@@ -8,7 +8,7 @@
     "/todos/{todo_id}": {
       "get": {
         "summary": "Get Todo",
-        "description": "Retrieve a to-do by its ID",
+        "description": "Retrieve a to-do by its ID.",
         "operationId": "get_todo_todos__todo_id__get",
         "parameters": [
           {
