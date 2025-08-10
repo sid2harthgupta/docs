@@ -11,7 +11,15 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Welcome"
+        "tab": "Welcome",
+        "groups": [
+          {
+            "group": "Introduction",
+            "pages": [
+              "index"
+            ]
+          }
+        ]
       },
       {
         "tab": "API Reference",
