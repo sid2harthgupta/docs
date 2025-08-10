@@ -27,11 +27,17 @@
         "groups": [
           {
             "group": "API documentation",
-            "pages": ["api-reference/introduction"]
+            "pages": [
+              "api-reference/introduction"
+            ]
           },
           {
             "group": "Endpoint examples",
-            "pages": []
+            "pages": [
+              "api-reference/endpoint/create-todo",
+              "api-reference/endpoint/delete-todo",
+              "api-reference/endpoint/get-todo"
+            ]
           }
         ]
       },
