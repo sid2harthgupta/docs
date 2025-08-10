@@ -1,0 +1,48 @@
+---
+title: 'Python SDK'
+description: 'Official Python SDK for the Todo API'
+icon: 'python'
+---
+
+## Installation
+
+Install the SDK using pip:
+
+```bash
+pip install todo-sdk-python
+```
+
+## Quick Start
+
+```python
+from todo_sdk_python.todo_sdk import TodoClient
+
+# Initialize the client
+client = TodoClient(base_url="http://localhost:8000")
+
+# Get a todo
+todo = client.get_todo(1)
+print(todo)
+
+# Create a new todo
+new_todo = client.create_todo(id=2, title="Buy groceries")
+print(new_todo)
+```
+
+## Configuration
+
+The `TodoClient` accepts the following parameters:
+
+<ParamField path="base_url" type="string" default="http://localhost:8000">
+  The base URL of the Todo API server
+</ParamField>
+
+## Available Methods
+
+<Card title="get_todo" icon="search" href="/sdk-reference/get_todo">
+  Retrieve a todo by its ID
+</Card>
+
+<Card title="create_todo" icon="plus" href="/sdk-reference/create_todo">
+  Create a new todo item
+</Card>

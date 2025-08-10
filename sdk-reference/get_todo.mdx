@@ -1,0 +1,36 @@
+---
+title: 'get_todo'
+description: 'Get a todo by ID.'
+---
+
+## Overview
+
+Get a todo by ID.
+
+## Usage
+
+```python
+from todo_sdk_python.todo_sdk import TodoClient
+
+client = TodoClient()
+>>> client = TodoClient()
+>>> client.get_todo(1)
+{'id': 1, 'title': 'Sample'}
+```
+
+## Signature
+
+```python
+get_todo(self, todo_id: int) -> dict
+```
+
+## Parameters
+
+<ParamField path="todo_id" type="any" required>
+  The todo's ID
+</ParamField>
+
+
+## Returns
+
+Todo dictionary with id and title

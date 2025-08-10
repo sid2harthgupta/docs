@@ -1,0 +1,75 @@
+---
+title: 'TodoClient'
+description: 'Main client class for interacting with the Todo API'
+---
+
+## Initialization
+
+```python
+from todo_sdk_python.todo_sdk import TodoClient
+
+client = TodoClient(base_url="http://localhost:8000")
+```
+
+<ParamField path="base_url" type="string" default="http://localhost:8000">
+  The base URL of the Todo API server. This should point to your API instance.
+</ParamField>
+
+## Methods
+
+### create_todo
+
+Create a new todo.
+
+<CodeGroup>
+```python Signature
+create_todo(self, todo_id: int, title: str) -> dict
+```
+
+```python Example
+>>> client = TodoClient()
+>>> client.create_todo(1, "Buy milk")
+{'id': 1, 'title': 'Buy milk'}
+```
+</CodeGroup>
+
+#### Parameters
+
+<ParamField path="todo_id" type="any" required>
+  Todo ID
+</ParamField>
+
+<ParamField path="title" type="any" required>
+  Todo title
+</ParamField>
+
+#### Returns
+
+Created todo object
+
+### get_todo
+
+Get a todo by ID.
+
+<CodeGroup>
+```python Signature
+get_todo(self, todo_id: int) -> dict
+```
+
+```python Example
+>>> client = TodoClient()
+>>> client.get_todo(1)
+{'id': 1, 'title': 'Sample'}
+```
+</CodeGroup>
+
+#### Parameters
+
+<ParamField path="todo_id" type="any" required>
+  The todo's ID
+</ParamField>
+
+#### Returns
+
+Todo dictionary with id and title
+

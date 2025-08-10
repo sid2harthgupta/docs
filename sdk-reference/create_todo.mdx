@@ -1,0 +1,40 @@
+---
+title: 'create_todo'
+description: 'Create a new todo.'
+---
+
+## Overview
+
+Create a new todo.
+
+## Usage
+
+```python
+from todo_sdk_python.todo_sdk import TodoClient
+
+client = TodoClient()
+>>> client = TodoClient()
+>>> client.create_todo(1, "Buy milk")
+{'id': 1, 'title': 'Buy milk'}
+```
+
+## Signature
+
+```python
+create_todo(self, todo_id: int, title: str) -> dict
+```
+
+## Parameters
+
+<ParamField path="todo_id" type="any" required>
+  Todo ID
+</ParamField>
+
+<ParamField path="title" type="any" required>
+  Todo title
+</ParamField>
+
+
+## Returns
+
+Created todo object
