@@ -15,35 +15,7 @@
         "groups": [
           {
             "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
+            "pages": []
           }
         ]
       },
@@ -59,8 +31,8 @@
           {
             "group": "Endpoints",
             "pages": [
-              "api-reference/endpoints/get-todos-todo_id",
-              "api-reference/endpoints/post-todos"
+              "api-reference/endpoint/get-todo",
+              "api-reference/endpoint/create-todo"
             ]
           }
         ]
