@@ -8,8 +8,44 @@
     "/todos/{todo_id}": {
       "get": {
         "summary": "Get Todo",
-        "description": "Get a todo by ID",
+        "description": "Retrieve a to-do by its ID",
         "operationId": "get_todo_todos__todo_id__get",
+        "parameters": [
+          {
+            "name": "todo_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Todo Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Create Todo",
+        "description": "Delete a to-do using its ID",
+        "operationId": "create_todo_todos__todo_id__delete",
         "parameters": [
           {
             "name": "todo_id",
@@ -46,7 +82,7 @@
     "/todos": {
       "post": {
         "summary": "Create Todo",
-        "description": "Create a new todo",
+        "description": "Create a new to-do",
         "operationId": "create_todo_todos_post",
         "requestBody": {
           "content": {
